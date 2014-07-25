@@ -1,7 +1,10 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://gems.adelaide.edu.au/
   specs:
     builder (3.2.2)
+    coderay (1.1.0)
+    daemons (1.1.9)
+    eventmachine (1.0.3)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     geminabox (0.12.4)
@@ -10,9 +13,15 @@ GEM
       httpclient (>= 2.2.7)
       nesty
       sinatra (>= 1.2.7)
-    httpclient (2.3.4.1)
+    httpclient (2.4.0)
+    method_source (0.8.2)
     multipart-post (2.0.0)
     nesty (1.0.2)
+    net-ldap (0.6.1)
+    pry (0.10.0)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
@@ -20,6 +29,11 @@ GEM
       rack (~> 1.4)
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
+    slop (3.5.0)
+    thin (1.6.2)
+      daemons (>= 1.0.9)
+      eventmachine (>= 1.0.0)
+      rack (>= 1.0.0)
     tilt (1.4.1)
 
 PLATFORMS
@@ -27,3 +41,6 @@ PLATFORMS
 
 DEPENDENCIES
   geminabox
+  net-ldap
+  pry
+  thin

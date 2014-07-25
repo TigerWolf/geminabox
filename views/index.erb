@@ -1,9 +1,7 @@
 <p>
-<small>If you did not need any credentials to get to this page</small>
+<small>You can use this command to use this gem server locally:</small>
   <pre><code>gem sources -a <%= url "/" %></code></pre>
-<small>If you needed some credentials to get to this page</small>
-  <pre><code>gem sources -a <%= url.to_s.gsub('://','://username:password@') %></code></pre>
-<small>and then ...</small>
+<small>To upload a gem, you can use this helpful command:</small>
   <pre><code>gem install geminabox<br />gem inabox [gemfile]</code></pre>
 </p>
 
